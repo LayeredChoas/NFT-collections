@@ -1,6 +1,9 @@
 
+// Blockchain Node
 const serverUrl = "https://opoyoshueneg.usemoralis.com:2053/server";
 const appId = "aJsOq9oXrG0zOWbebfuWodJTSohoIR3KCYWuwIm1";
+
+// NFT Collection (we can make it change depending on the input of the user in the frontend)
 const contractID = '0xc8adfb4d437357d0a656d4e62fd9a6d22e401aa0';
 
 const queryString = window.location.search;
@@ -31,6 +34,7 @@ async function getCollections(event) {
   let count = 0;
   NFTs["result"].map(async (nft) => {
     count++;
+    // We limit it to only show 10 NFT's to make sure we don't overload our node
     if (count <= 10) {
       const options = {
         address: contractID,
