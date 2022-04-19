@@ -1,0 +1,19 @@
+.text-align-center {
+  text-align: center;
+}
+
+#nft-card {
+  background: aliceblue;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-radius: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#transactionBody {
+    font-size: 12px;
+}
+
+.font-15{
+    font-size: 15px;
+}
